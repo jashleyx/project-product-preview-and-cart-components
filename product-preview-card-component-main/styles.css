@@ -20,9 +20,15 @@ body {
     --montserrat: 'Montserrat', sans-serif;
 }
 
+@media screen and (min-width: 960px){
+
 .gabrielle-chanel {
-    border-radius: 10px 0 0 10px; /* ความมนของขอบรูปภาพ บนซ้ายและล่างซ้าย */
+    border-radius: 10px 0 0 10px; 
 } 
+
+.mobile-gabrielle-chanel{
+    display: none;
+}
 
 .product-detail{
     width: 250px;
@@ -109,14 +115,18 @@ body {
   text-align: center;
   font-family: var(--montserrat)
 }
-
+}
 
 @media screen and (max-width: 959px){
 
-.gabrielle-chanel  {
-    width: 100px;
+.gabrielle-chanel{
+    display: none;
+}
+
+.mobile-gabrielle-chanel  {
+    width: 250px;
     height: auto;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .product-detail{
